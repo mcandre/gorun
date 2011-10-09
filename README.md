@@ -8,6 +8,8 @@ INSTALL
 
 EXAMPLE
 
+hello.go:
+
 	#!/usr/bin/env gorun
 
 	package main
@@ -17,5 +19,7 @@ EXAMPLE
 	func main() {
 		fmt.Println("Hello World!")
 	}
+
+Run:
 
 	./hello.go
