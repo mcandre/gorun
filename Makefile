@@ -1,7 +1,6 @@
-include $(GOROOT)/src/Make.inc
+install: gorun
+	install -b -c $< /usr/local/bin/
 
-TARG=gorun
+gorun: gorun.go
+	go build gorun.go
 
-GOFILES=gorun.go
-
-include $(GOROOT)/src/Make.cmd
